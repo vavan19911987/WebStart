@@ -430,10 +430,17 @@ img {
   min-width: 200px;
   background-color: #fff;
   padding: 40px;
+  border-radius: 30px;
 }
 
 .modal-dialog__close {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__title {
+  color: red;
+  font-family: 'Museo Sans Light' , sans-serif;
+  font-weight: 300;
 }
