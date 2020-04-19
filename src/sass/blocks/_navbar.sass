@@ -14,10 +14,22 @@
 	&__address
 		display: flex
 		flex-direction: column
-	
+		
 	&__button
-		margin-left: 30px
+		margin-left: 50px
 		+bold
+		&::after
+			content: ''
+			display: block
+			height: 1px
+			background-color: #000
+			transition: 0.5s
+			width: 0%
+		&:hover
+			&::after
+				width: 100%
+			
+		
 
 	&__phone
 		display: block
@@ -27,8 +39,7 @@
 		text-decoration: none
 		margin-top: 9px
 		+bold
-
-	@media (max-width: 580px)
+@media (max-width: 580px)
 		&__contacts
 			display: none
 		&__button
@@ -36,4 +47,9 @@
 			padding: 15px 26px
 		&__logo
 			width: 95px		
+.button
+	&__button
+		
+
+	
 	
