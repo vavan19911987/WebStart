@@ -158,6 +158,10 @@ img {
   font-weight: 700;
 }
 
+.navbar__phone-red {
+  color: red;
+}
+
 @media (max-width: 580px) {
   .navbar__contacts {
     display: none;
@@ -366,6 +370,10 @@ img {
   font-weight: 700;
 }
 
+.offer__phone-red {
+  color: red;
+}
+
 @media (max-width: 1200px) {
   .offer {
     background-size: cover;
@@ -443,4 +451,27 @@ img {
   color: red;
   font-family: 'Museo Sans Light' , sans-serif;
   font-weight: 300;
+}
+
+.btn-up {
+  display: none;
+  margin: 25px;
+  position: fixed;
+}
+
+.btn-up__title {
+  font-family: 'Museo Sans Bold' , sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.btn-up__title:hover {
+  cursor: pointer;
+  color: #ffd200;
+}
+
+@media (max-width: 1380px) {
+  .btn-up {
+    display: none;
+  }
 }
