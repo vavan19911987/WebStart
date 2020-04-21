@@ -561,6 +561,20 @@ img {
       flex-wrap: wrap;
 }
 
+@media (max-width: 1200px) {
+  .cards {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
 .modal {
   position: fixed;
   left: 0;
