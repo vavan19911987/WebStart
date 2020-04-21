@@ -99,3 +99,15 @@ $(document).ready(function () {
 		 ]
 	});
 });
+
+// $(document).ready(function () {
+
+// 	$('#card').mouseenter(function () {
+
+// 		$(this).toggleClass('card__image');
+// 	});
+// 	$('#card').mouseleave(function () {
+
+// 		$(this).toggleClass('card__image');
+// 	});
+// });
