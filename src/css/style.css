@@ -569,6 +569,9 @@ img {
 }
 
 @media (max-width: 768px) {
+  .price__title {
+    width: 330px;
+  }
   .card {
     margin: auto;
     margin-bottom: 30px;

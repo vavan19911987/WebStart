@@ -111,3 +111,4 @@ $(document).ready(function () {
 // 		$(this).toggleClass('card__image');
 // 	});
 // });
+
