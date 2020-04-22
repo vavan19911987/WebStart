@@ -69,6 +69,10 @@ $(document).ready(function () {
 
 		$(this).toggleClass('offer__phone-red');
 	});
+
+	$('#logo').click(function(){
+		$(this).toggleClass('logo')
+	});
 });
 
 // слайдер с использованием библиотеки slick
@@ -99,6 +103,7 @@ $(document).ready(function () {
 		 ]
 	});
 });
+
 
 // $(document).ready(function () {
 

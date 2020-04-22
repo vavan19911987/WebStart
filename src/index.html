@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
@@ -18,7 +19,7 @@
 	<nav class="navbar">
 		<div class="container">
 			<div class="navbar-block">
-				<div class="navbar__logo">
+				<div id="logo" class="navbar__logo">
 					<img src="img/logo.png" alt="logo">
 				</div>
 				<!-- /.navbar__logo -->
@@ -165,7 +166,7 @@
 				</span>
 				<!-- /.seclion-subtitle price__sybtitle -->
 				<div class="cards">
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
 						<div class="card__image"><img class="card__img" src="img/price/bathroom.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -179,7 +180,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
 						<div class="card__image"><img class="card__img" src="img/price/living.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -193,7 +194,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.6s">
 						<div class="card__image"><img class="card__img" src="img/price/office.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -207,7 +208,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.7s">
 						<div class="card__image"><img class="card__img" src="img/price/houses.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -221,7 +222,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.8s">
 						<div class="card__image"><img class="card__img" src="img/price/kithen.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -235,7 +236,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.9s">
 						<div class="card__image"><img class="card__img" src="img/price/buildines.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -255,6 +256,13 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.section price -->
+		<script src="js/wow.js"></script>
+		<script src="js/jquery-3.5.0.min.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/slick.min.js"></script>
+		<!-- инициализация wow -->
+		<script> new WOW().init(); </script> 
+	
 	</main>
 
 
@@ -266,10 +274,6 @@
 		<!-- /.modal-dialog -->
 	</div>
 	<!-- /.modal -->
-
-	<script src="js/jquery-3.5.0.min.js"></script>
-	<script src="js/main.js"></script>
-	<script src="js/slick.min.js"></script>
 
 </body>
 
