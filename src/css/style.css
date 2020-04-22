@@ -570,7 +570,7 @@ img {
 
 @media (max-width: 768px) {
   .price__title {
-    width: 330px;
+    width: 350px;
   }
   .card {
     margin: auto;
