@@ -575,7 +575,10 @@ img {
   .card {
     margin: auto;
     margin-bottom: 30px;
-    padding: 0;
+  }
+  .cards {
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 
