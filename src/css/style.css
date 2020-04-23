@@ -195,7 +195,7 @@ img {
   }
 }
 
-.navbar .navbar .logo {
+.navbar .navbar__block .logo {
   -webkit-animation-name: none;
           animation-name: none;
 }
