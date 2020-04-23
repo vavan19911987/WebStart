@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Museo Sans Light';
+  font-family: 'MuseoSans Light';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Museo Sans Bold';
+  font-family: 'MuseoSans Bold';
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot");
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
@@ -20,8 +20,8 @@
 }
 
 body {
-  font-family: 'Museo Sans Light' , sans-serif;
-  font-weight: 300;
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
 }
 
 img {
@@ -71,7 +71,7 @@ img {
 
 .section-title {
   font-size: 24px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
   text-align: center;
 }
@@ -96,6 +96,10 @@ img {
   cursor: pointer;
 }
 
+.navbar__logo {
+  cursor: pointer;
+}
+
 .navbar {
   padding: 8px 0;
 }
@@ -115,8 +119,8 @@ img {
 .navbar .logo {
   -webkit-animation-name: sliderRight;
           animation-name: sliderRight;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: 2;
@@ -145,7 +149,7 @@ img {
 
 .navbar__button {
   margin-left: 50px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -170,7 +174,7 @@ img {
   font-weight: 400;
   text-decoration: none;
   margin-top: 9px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -189,6 +193,11 @@ img {
   .navbar__logo {
     width: 95px;
   }
+}
+
+.navbar .navbar .logo {
+  -webkit-animation-name: none;
+          animation-name: none;
 }
 
 .hero {
@@ -212,7 +221,7 @@ img {
   margin-bottom: 50px;
   font-size: 31px;
   line-height: 40px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -220,7 +229,7 @@ img {
   display: inline-block;
   font-size: 18px;
   margin-bottom: 63px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -349,7 +358,7 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -383,7 +392,7 @@ img {
   color: #333333;
   font-size: 15px;
   text-decoration: none;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -466,7 +475,7 @@ img {
   margin-bottom: 58px;
   font-size: 30px;
   line-height: 45px;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
 }
 
@@ -475,8 +484,8 @@ img {
   text-align: center;
   margin-bottom: 59px;
   font-size: 20px;
-  font-family: 'Museo Sans Light' , sans-serif;
-  font-weight: 300;
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
 }
 
 .price__card {
@@ -506,8 +515,8 @@ img {
 .card__title {
   margin-top: 0;
   font-size: 18px;
-  font-family: 'Museo Sans Light' , sans-serif;
-  font-weight: 300;
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
 }
 
 .card__image {
@@ -537,7 +546,7 @@ img {
   font-size: 16px;
   font-weight: 400;
   text-decoration: none;
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
   color: #333333;
   position: relative;
@@ -628,8 +637,8 @@ img {
 
 .modal-dialog__title {
   color: red;
-  font-family: 'Museo Sans Light' , sans-serif;
-  font-weight: 300;
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
 }
 
 .btn-up {
@@ -639,7 +648,7 @@ img {
 }
 
 .btn-up__title {
-  font-family: 'Museo Sans Bold' , sans-serif;
+  font-family: 'MuseoSans Bold', sans-serif;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.2);
 }
@@ -656,8 +665,6 @@ img {
 
 @-webkit-keyframes sliderRight {
   from {
-    40% {
-    }
   }
   to {
     margin-left: 300px;
@@ -666,8 +673,6 @@ img {
 
 @keyframes sliderRight {
   from {
-    40% {
-    }
   }
   to {
     margin-left: 300px;
