@@ -193,11 +193,10 @@ img {
   .navbar__logo {
     width: 95px;
   }
-}
-
-.navbar .navbar__block .logo {
-  -webkit-animation-name: none;
-          animation-name: none;
+  .navbar .navbar-block .logo {
+    -webkit-animation-name: none;
+            animation-name: none;
+  }
 }
 
 .hero {
