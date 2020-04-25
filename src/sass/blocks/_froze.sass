@@ -1,0 +1,85 @@
+.froze
+	&__bg
+		display: flex
+		margin: 0
+		margin-top: 100px
+		background-color: $main-colors
+		// background: url(../img/froze/Прямоугольник.jpg) no-repeat
+
+	&__text
+		text-align: center
+		padding: 100px 0
+		font-size: 32px
+		line-height: 50px
+		margin: auto
+		width: 906px
+		+reg
+	&-arrow
+		&__aro
+			margin: 0
+	&-list
+		padding: 0
+		margin: 0
+		margin-left: 20px
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		align-items: center
+		&__item
+			display: flex
+			align-items: center
+			flex-direction: column
+			margin: 0
+			width: 170px
+			&:last-child
+				margin-bottom: 0
+		&__image
+			width: 100px
+			height: 100px
+			border: 2px solid $main-colors
+			border-radius: 50%	
+			display: flex
+			justify-content: center
+			align-items: center
+			
+		&__text
+			font-size: 14px
+			line-height: 20px
+			margin-top: 30px
+			text-align: center
+			width: 200px
+			+reg
+	&__title
+		width: 690px
+		margin: auto
+		margin-bottom: 60px
+		font-size: 30px
+		line-height: 45px
+		+bold
+	&__subtitle
+		font-size: 20px
+		margin-bottom: 69px
+		+reg
+@media (max-width: 1200px)
+	.froze
+		&-arrow
+			&__aro
+				display: none
+		&-list
+			// margin-left: 75px		
+		&__text			
+			font-size: 24px
+			width: 600px
+			padding: 75px 0
+@media (max-width: 768px)
+	.froze
+		&__title
+			font-size: 25px
+			width: 300px
+		&-list
+			padding: 10px
+			&__text
+				margin-bottom: 20px	
+
+
+
