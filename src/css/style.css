@@ -630,13 +630,12 @@ li {
 
 .froze-arrow__aro {
   margin: 0;
-  margin-bottom: 190px;
 }
 
 .froze-list {
   padding: 0;
   margin: 0;
-  margin-left: 15px;
+  margin-left: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -645,9 +644,6 @@ li {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .froze-list__item {
