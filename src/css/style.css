@@ -778,6 +778,16 @@ li {
   max-width: 330px;
 }
 
+.step-text2 {
+  display: inline-block;
+  margin-top: 41px;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
+}
+
 .step-doc {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -798,8 +808,16 @@ li {
     margin-bottom: 25px;
     max-width: 307px;
   }
+  .step-doc {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .step-doc__image {
     margin-bottom: 25px;
+  }
+  .step__doc {
+    margin: 20px;
   }
 }
 

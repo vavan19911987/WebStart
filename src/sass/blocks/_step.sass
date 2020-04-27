@@ -17,7 +17,13 @@
 		+reg
 	&__doc
 		max-width: 330px	
-		
+	&-text2
+		display: inline-block
+		margin-top: 41px
+		font-size: 18px
+		line-height: 24px
+		text-align: center
+		+reg	
 	&-doc
 		display: flex
 		justify-content: space-between
@@ -30,8 +36,11 @@
 			margin-bottom: 25px
 			max-width: 307px
 		&-doc
+			justify-content: center
 			&__image
-				margin-bottom: 25px		
+				margin-bottom: 25px
+		&__doc
+			margin: 20px				
 
 @media (max-width: 768px)
 	.step
@@ -41,6 +50,6 @@
 		&-doc
 			justify-content: center
 			&__image
-				margin-bottom: 25px		
+				margin-bottom: 25px
 
 		
