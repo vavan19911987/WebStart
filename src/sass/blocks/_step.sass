@@ -24,12 +24,22 @@
 		flex-wrap: wrap
 		&__image
 			border: 25px solid $border-input
-
-@media (max-width: 768px)
+@media (max-width: 1200px)
 	.step
 		&__img
 			margin-bottom: 25px
+			max-width: 307px
 		&-doc
+			&__image
+				margin-bottom: 25px		
+
+@media (max-width: 768px)
+	.step
+		justify-content: center
+		&__img
+			margin-bottom: 25px
+		&-doc
+			justify-content: center
 			&__image
 				margin-bottom: 25px		
 
