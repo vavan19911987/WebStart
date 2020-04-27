@@ -1,0 +1,36 @@
+.step
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+	&__image
+		padding-bottom: 143px	
+	&-text
+		display: flex
+		justify-content: center
+		flex-wrap: wrap	
+		margin-bottom: 100px
+	&__text
+		width: 642px
+		text-align: center
+      line-height: 45px
+		font-size: 30px
+		+reg
+	&__doc
+		max-width: 330px	
+		
+	&-doc
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		&__image
+			border: 25px solid $border-input
+
+@media (max-width: 768px)
+	.step
+		&__img
+			margin-bottom: 25px
+		&-doc
+			&__image
+				margin-bottom: 25px		
+
+		
