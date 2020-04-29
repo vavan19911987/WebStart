@@ -60,9 +60,29 @@ $(document).ready(function () {
 $(document).ready(function () {
 // маска для телефона
 	$(".phone").mask("+7 (999) 999-99-99");
+	$('#offer-form').validate({
+		rules: {
+		 username: {
+			 required: true,
+			 minlength: 1
+		 },
+		 phone: {
+			 required: true
+		 },
+		},
+		messages: {
+			username: {
+				required: "Укажите Ваше имя",
+				minlength: jQuery.validator.format("Еще символов: {0}")
+			},
+			phone: {
+				required: "Укажите номер телефона"
+			},
+		}
+ });
 
 // валидация форм
-	$('#brif-form, #offer-form').validate({
+	$('#brif-form').validate({
 		  rules: {
 			username: {
 				required: true,
