@@ -102,9 +102,9 @@
 					<span class="section-subtitle offer__subtitle">Оставьте заявку на разработку
 						бесплатного дизайн-проекта!</span>
 					<!-- /.section-subtitle -->
-					<form action="#" class="form offer__form">
-						<input type="text" class="input offer__input" placeholder="Ваше имя">
-						<input type="tel" class="input offer__input" placeholder="Ваш телефон">
+					<form action="#" id="offer-form" class="form offer__form">
+						<input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
+						<input type="tel" name="phone" class="input offer__input phone" placeholder="Ваш телефон">
 						<button class="button offer__button">Получить бесплатный дизайн-проект</button>
 					</form>
 					<!-- /.form offer__form -->
@@ -408,9 +408,10 @@
 							Оставьте заявку на бесплатный расчет ремонта по телефону	</h3>
 						<span class="form__subtitle">Для этого заполните форму ниже
 						</span>
-						<form action="#">
-							<input type="text" class="input brif__input" placeholder="Ваш Имя">
-							<input type="tel" class="input brif__input" placeholder="Ваш Телефон">
+						<form action="#" id="brif-form">
+							<input type="text" name="username" class="input brif__input" placeholder="Ваше Имя">
+							<input type="tel" name="phone" class="input brif__input phone" placeholder="Ваш Телефон">
+							<input type="email" name="email" class="input brif__input" placeholder="Ваш Email">
 							<button class="button brif__button">узнать стоимость</button>
 							<span class="form__discription">Мы перезвоним Вам в течение 60 секунд
 							</span>
@@ -441,6 +442,8 @@
 	<script src="js/main.js"></script>
 	<script src="js/slick.min.js"></script>
 	<script src="js/wow.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
 	<!-- инициализация wow -->
 	<script> new WOW().init(); </script> 
 
