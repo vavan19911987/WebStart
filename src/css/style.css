@@ -109,6 +109,10 @@ li {
   color: red;
 }
 
+a {
+  text-decoration: none;
+}
+
 .navbar {
   padding: 8px 0;
 }
@@ -994,6 +998,102 @@ li {
   }
   .brif__form {
     margin-top: 80px;
+  }
+}
+
+.footer {
+  position: relative;
+}
+
+.map {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+}
+
+.contacts {
+  padding-top: 100px;
+  padding-left: 200px;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.contacts__title {
+  font-family: 'MuseoSans Bold', sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.4;
+  margin-bottom: 100px;
+}
+
+.contacts-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.contacts__phone {
+  display: block;
+  color: #333333;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-top: 9px;
+  font-family: 'MuseoSans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.contacts__phone-red {
+  color: red;
+}
+
+.contacts-list {
+  padding: 0;
+}
+
+.contacts-list__icon {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-right: 23px;
+}
+
+.contacts-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 39px;
+}
+
+.contacts-list__text {
+  font-family: 'MuseoSans Light', sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .contacts {
+    padding-top: 80px;
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contacts-block {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .map {
+    position: relative;
+    width: 100%;
   }
 }
 

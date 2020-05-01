@@ -55,9 +55,22 @@ $(document).ready(function () {
 		$(this).toggleClass('navbar__phone-red');
 	});
 });
+$(document).ready(function () {
+
+	$('#red3').mouseenter(function () {
+
+		$(this).toggleClass('contacts__phone-red');
+	});
+	$('#red3').mouseleave(function () {
+
+		$(this).toggleClass('contacts__phone-red');
+	});
+});
+
 
 
 $(document).ready(function () {
+
 // маска для телефона
 	$(".phone").mask("+7 (999) 999-99-99");
 	$('#offer-form').validate({
@@ -108,8 +121,6 @@ $(document).ready(function () {
 		  }
 	});
 
-	// телефон
-	// $('#phone1').mack('+7 (999) 999-99-99');
 
 // так же добавляет класс logo
 // функция доиавление нового класса для номера телефона лелает телефон при наведении красным в offer 
@@ -121,6 +132,7 @@ $('#read2').mouseenter(function () {
 
 		$(this).toggleClass('offer__phone-red');
 	});
+	
 		$('#logo').click(function(){
 
 		$(this).toggleClass('logo')
