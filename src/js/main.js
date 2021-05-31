@@ -113,6 +113,28 @@ $('#read2').mouseenter(function () {
 
 	});
 
+
+
+});
+
+
+$('form').submit(function (e) {
+	e.preventDefault();
+	$.ajax({
+		type: "POST",
+		url: "mailer/smart.php",
+		data: $(this).serialize(),
+	}).done(function () {
+		$(this).find('input').val('');
+		$('.overlay,#modal,#order').fadeOut();
+		$('.overlay').fadeIn('slow');
+
+
+		$('form').trigger('reset');
+	});
+	return false;
+	
+
 });
 
 
@@ -149,15 +171,5 @@ $(document).ready(function () {
 });
 
 
-// $(document).ready(function () {
 
-// 	$('#card').mouseenter(function () {
-
-// 		$(this).toggleClass('card__image');
-// 	});
-// 	$('#card').mouseleave(function () {
-
-// 		$(this).toggleClass('card__image');
-// 	});
-// });
 
