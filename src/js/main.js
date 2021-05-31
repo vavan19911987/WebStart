@@ -70,56 +70,31 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-
-// маска для телефона
-	$(".phone").mask("+7 (999) 999-99-99");
-	$('#offer-form').validate({
-		rules: {
-		 username: {
-			 required: true,
-			 minlength: 1
-		 },
-		 phone: {
-			 required: true
-		 },
-		},
-		messages: {
-			username: {
-				required: "Укажите Ваше имя",
-				minlength: jQuery.validator.format("Еще символов: {0}")
+	function validateForm(form) {
+		$(form).validate({
+			rules: {
+				name: "required",
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+	
 			},
-			phone: {
-				required: "Укажите номер телефона"
-			},
-		}
- });
-
-// валидация форм
-	$('#brif-form').validate({
-		  rules: {
-			username: {
-				required: true,
-				minlength: 1
-			},
-			phone: {
-				required: true
-			},
-			email: {
-				required: true,
-				email: true
+			messages: {
+				name: "Пожалуйста введите своё Имя",
+				phone: "Пожалуйста введите свой телефон",
+				email: {
+					required: "Пожалуйста введите свой почтовый адрес",
+					email: "Неправильно введён адрес почты"
+				}
 			}
-		  },
-		  messages: {
-			  username: {
-				  required: "Укажите Ваше имя",
-				  minlength: jQuery.validator.format("Еще символов: {0}")
-			  },
-			  phone: {
-				  required: "Укажите номер телефона"
-			  },
-			  email: 'Почта заполнена не верно'
-		  }
-	});
+		});
+	}
+	
+	validateForm('#offer-form');
+	validateForm('#brif-form');
+
 
 
 // так же добавляет класс logo
@@ -141,7 +116,8 @@ $('#read2').mouseenter(function () {
 
 });
 
-		
+
+
 	
 
 // слайдер с использованием библиотеки slick
