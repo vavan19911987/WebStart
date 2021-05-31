@@ -23,6 +23,8 @@
 				<div id="logo" class="navbar__logo">
 					<img src="img/logo.png" alt="logo">
 				</div>
+<div data-modal="click" class="clickMi">Click Mi</div>
+
 				<!-- /.navbar__logo -->
 				<div class="navbar__info">
 					<div class="navbar__contacts">
@@ -34,7 +36,7 @@
 						</a>
 					</div>
 					<!-- /.navbar__contacts -->
-					<button class="button navbar__button" onclick="ym(62507473, 'reachGoal', 'button'); return true;" id="button">
+					<button data-modal="modall" class="button navbar__button">
 						Перезвоните мне
 					</button> <!-- /.button navbar__button -->
 				</div>
@@ -468,16 +470,26 @@
 		<!-- /.container -->
 		</footer>
 	<!-- /.footer section -->
-
-
-	<div class="modal" id="modal">
-		<div class="modal-dialog">
-			<button class="modal-dialog__close" id="close">&times;</button>
-			<h1 class="modal-dialog__title">Звонок заказан вскоре Вам перезвонит наш менеджер</h1>
+	<div class="overlay">
+		<div class="modal" id="modal">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Введите ваши данные</div>
+			<form class="feed-form feed-form_mt25" action="#" id="modal-form">
+				<input name="name" required type="text" placeholder="Ваше Имя">
+				<input name="phone" required placeholder="Ваш Телефон">
+				<button class="button button_form">Заказать звонок</button>
+	
+			</form>
 		</div>
-		<!-- /.modal-dialog -->
+
+
+		<div class="modal mini" id="order">
+			<div class="modal__close">&times;</div>
+			<div class="modal__subtitle">Данный сайт является первым учебным проэктом и практикой в Web програмировании по этапам учебы был модарнезирован и доработан также видутся доработки над мобильной версиий сайта</div>
+		</div>
+	
 	</div>
-	<!-- /.modal -->
+
 	<script src="js/jquery-3.5.0.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/slick.min.js"></script>

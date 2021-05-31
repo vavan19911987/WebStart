@@ -1,27 +1,67 @@
-.modal
-	position: fixed
-	left: 0
-	top: 0
-	width: 100%
-	height: 100%
-	background-color: rgba(#000, 0.5 )
-	display: none
-	&_active
-		display: flex
-	&-dialog
-		position: relative
-		margin: auto
-		max-width: 450px
-		width: 90%
-		min-width: 200px
-		background-color: #fff
-		padding: 40px
-		border-radius: 30px
-		&__close
-			position: absolute
-			top: 0
-			right: 0
-		&__title
-			color: red
-			+reg
+.overlay 
+    display: none
+    position: fixed
+    width: 100%
+    height: 100%
+    background: rgba($color: #000000, $alpha: 0.56)
+    top: 0
+
+.modal 
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 380px
+    height: 370px
+    background-color: #f2f2f2
+    padding: 38px 40px 40px 40px
+    &__close 
+        position: absolute
+        top: 0
+        right: -41px
+        font-size: 41px
+        line-height: 21px
+        color: red
+        cursor: pointer
+    
+    &__subtitle 
+        font-size: 18px
+        font-weight: 700
+        color: #0d0d0d
+        text-align: center
+        
+    
+#order, #modal 
+    display: none
+
+.modal.mini
+	display: flex
+	justify-content: center
+	align-items: center
+	line-height: 30px
+
+.feed-form 
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    input 
+        height: 50px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin: 15px 0 15px 0;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: 300;
+        color: #4b4b4b;
+        // &:nth-child(3) {
+        //     margin-bottom: 20px;
+
+.button_form 
+	margin-top: 15px
 	
+
+.clickMi
+	font-size: 18px
+	font-weight: 900
+	cursor: pointer

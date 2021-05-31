@@ -1,20 +1,15 @@
 // функция вывода модального окна
 
-$(document).ready(function () {
-	var button = $('#button');
-	var modal = $('#modal');
-	var close = $('#close');
-
-	button.on('click', function () {
-
-		modal.addClass('modal_active')
-	});
-
-	close.on('click', function () {
-
-		modal.removeClass('modal_active')
-	});
+$('[data-modal=modall]').on('click', function () {
+	$('.overlay,#modal').fadeIn('slow');
 });
+$('[data-modal=click]').on('click', function () {
+	$('.overlay,#order').fadeIn('slow');
+});
+$('.modal__close').on('click', function () {
+	$('.overlay, #order').fadeOut('slow');
+});
+
 
 // функция скролинг кнопки вверх
 
@@ -94,7 +89,11 @@ $(document).ready(function () {
 	
 	validateForm('#offer-form');
 	validateForm('#brif-form');
+	validateForm('#modal-form');
 
+    // $('.modal__close').on('click', function () {
+    //     $('.overlay').fadeOut('slow');
+    // });
 
 
 // так же добавляет класс logo
